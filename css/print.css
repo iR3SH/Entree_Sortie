@@ -1,0 +1,70 @@
+#top{
+  display : none;
+}
+
+#back-top{
+ display : none;
+}
+
+#btn-finish{
+ display : none;
+}
+
+#btn-correct{
+ display : none;
+}
+
+#btn-impression{
+ display : none;
+}
+
+#copyright{
+ display : none;
+}
+
+@media print {
+div {
+                display:block !important;
+}
+table {
+                width:30% !important;
+}
+body {
+  font-size :10pt;
+}
+p { /* Modifications : alignement du texte - marges - unitÃ© des marges, police et taille de la police */
+  text-align:justify;
+  margin:2pt 1pt 6pt 0;
+  font-size:10pt;
+  color:#000;
+  page-break-inside: avoid !important;
+  padding-top: 5px !important;
+}
+#contenu { /* Modifications : suppression du float - adaptation de la largeur*/
+  float:none;
+  width:100%;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+
+#contenu h3 { /* Modifications : marges - unitÃ© des marges, police et taille de la police */
+  font-size:12pt;
+	font-weight:bold;
+	margin: 10pt 0 5pt 0;
+}
+
+#contenu a { /* Modifications : suppression du gras et du soulignÃ© */
+  font-weight:normal;
+  text-decoration:none;
+  box-shadow: none !important;
+}
+
+h0 {margin: 0px;padding: 0px;}
+h1 {margin: 0px;padding: 0px;}
+h2 {margin: 0px;padding: 0px;}
+h3 {margin: 0px;padding: 0px;}
+h4 {margin: 0px;padding: 0px;}
+h5 {margin: 0px;padding: 0px;}
+#Page {margin-left:auto;margin-right:auto;}
+}
